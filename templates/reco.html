@@ -1,0 +1,89 @@
+<!--
+    Bootstrap quick start
+    =====================
+    A stripped-down Bootstrap starter page with included dependencies. Based on
+    the Bootstrap starter template example at
+    http://twitter.github.com/bootstrap/examples/starter-template.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>IOT Solution </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="杨恒星">
+
+        <!-- Styles -->
+        <link href=  "{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+        <style>
+            body {
+                /* 60px to make the container go all the way to the
+                 * bottom of the topbar */
+                padding-top: 60px;
+
+            }
+        </style>
+        <link href="{{ url_for('static', filename='bootstrap/css/bootstrap-responsive.min.css') }}" rel="stylesheet" />
+
+
+    <body>
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse"
+                            data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">
+                        Bootstrap quick start
+                    </a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">arduino</a>
+                            </li>
+                            <li>
+                                <a href="#">树莓派</a>
+                            </li>
+                            <li>
+                                <a href="#contact">nodemcu</a>
+                            </li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Bootstrap quick start</h1>
+            <p>
+                This is a stripped-down
+                <a href='http://twitter.github.com/bootstrap/examples/starter-template.html'>
+                    Bootstrap starter template
+                </a>
+                with:
+            </p>
+            <ul>
+               <li>4-space soft tabs</li>
+               <li>80-column wrap</li>
+               <li>All required dependencies included</li>
+            </ul>
+
+            <p>
+                Snag a copy from
+                <a href='https://github.com/robatron/bootstrap-quick-start'>
+                    github</a>.
+            </p>
+
+        </div> <!-- /container -->
+
+        <!-- javascript
+             (Placed at the bottom so the DOM loads faster) -->
+        <script src="{{ url_for('static',filename='bootstrap/js/jquery.js')}}"></script>
+        <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js')}}"></script>
+    </body>
+</html>
